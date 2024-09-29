@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mot de passe oublié</title>
+    <link rel="stylesheet" href="main2.css">
+    <script src="main2.js" defer></script>
+</head>
+<body>
+    <img src="pic.png" alt="صورة في أعلى الشاشة" class="top-image">
+    <div class="content-box">
+        <div class="top-bar"></div>
+        <label for="text-area" class="label">Code masar</label>
+        <textarea id="text-area" class="text-area"></textarea>
+        <button class="button" onclick="sendMessage()">Rechercher</button>
+    </div>
+    <div id="error-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <div class="modal-body">
+                <img src="wifi.png" alt="رمز حظر" class="ban-icon">
+                <p>Vous devez être connecté à Internet</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
